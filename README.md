@@ -49,9 +49,10 @@ Available variables are listed below, along with their default values:
 
 Available outputs are listed below, along with their description:
 
-| output        | description                |
-|---------------|----------------------------|
-| `subnet_ids`  | List of created subnet ids |
+| output         | description                 |
+|----------------|-----------------------------|
+| `subnet_ids`   | List of created subnet ids  |
+| `subnet_cidr`  | List of created subnet cidr |
 
 ## Maintainers
 
