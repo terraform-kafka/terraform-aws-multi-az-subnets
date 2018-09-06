@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 resource "aws_subnet" "main" {
-  count             = "${length(var.subnet_cidr_blocks)}"
+  count             = "${length(var.cidr_blocks)}"
   vpc_id            = "${var.vpc_id}"
   cidr_block        = "${element(var.cidr_blocks, index)}"
   availability_zone = "${var.zones[index % length(var.zones)]}"
